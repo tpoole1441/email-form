@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Email Form</title>
+  </head>
+
+  <body>
+    <main>
+      <form>
+        <div>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            autofocus="on"
+            placeholder="John Doe"
+          />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            pattern=".+@example\.com"
+            required
+            placeholder="johndoe@example.com"
+          />
+        </div>
+        <div>
+          <label for="message">Your message:</label>
+          <textarea id="message" name="message" rows="5" cols="30">
+Enter message here!
+                </textarea
+          >
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
